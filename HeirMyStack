@@ -1,0 +1,33 @@
+/*名字:王懷謙
+ *學號:U10316039
+ *ex:11_10
+ */
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+class HeirMyStack extends ArrayList<Object>{
+	
+	public boolean isEmpty(){
+		return super.isEmpty();
+	}
+
+	public void push(String o){
+		super.add(o);
+	}
+
+	public int getSize(){
+		return super.size();
+	}
+
+	public Object peek(){
+		return super.get(getSize() - 1);
+	}
+
+	public Object pop(){
+		Object o = super.get(getSize()-1);
+		super.remove(getSize()-1);
+		return o;
+	}
+}
